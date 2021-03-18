@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F35C9EB26038BB10058BFA5 /* NIBProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35C9EA26038BB10058BFA5 /* NIBProcess.swift */; };
 		8F6F2CC8260345A9004A38E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F2CC7260345A9004A38E5 /* AppDelegate.swift */; };
 		8F6F2CCA260345A9004A38E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F2CC9260345A9004A38E5 /* SceneDelegate.swift */; };
 		8F6F2CCC260345A9004A38E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F2CCB260345A9004A38E5 /* ViewController.swift */; };
@@ -15,6 +16,8 @@
 		8F6F2CD4260345AA004A38E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F2CD2260345AA004A38E5 /* LaunchScreen.storyboard */; };
 		8F6F2CDF260345AB004A38E5 /* My_UnsplashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F2CDE260345AB004A38E5 /* My_UnsplashTests.swift */; };
 		8F6F2CEA260345AB004A38E5 /* My_UnsplashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F2CE9260345AB004A38E5 /* My_UnsplashUITests.swift */; };
+		8F6F2D0126034825004A38E5 /* UnsplashCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6F2CFF26034825004A38E5 /* UnsplashCollectionViewCell.swift */; };
+		8F6F2D0226034825004A38E5 /* UnsplashCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F6F2D0026034825004A38E5 /* UnsplashCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8F35C9EA26038BB10058BFA5 /* NIBProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIBProcess.swift; sourceTree = "<group>"; };
 		8F6F2CC4260345A9004A38E5 /* My Unsplash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Unsplash.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6F2CC7260345A9004A38E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8F6F2CC9260345A9004A38E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,8 @@
 		8F6F2CE5260345AB004A38E5 /* My UnsplashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My UnsplashUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F6F2CE9260345AB004A38E5 /* My_UnsplashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_UnsplashUITests.swift; sourceTree = "<group>"; };
 		8F6F2CEB260345AB004A38E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F6F2CFF26034825004A38E5 /* UnsplashCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashCollectionViewCell.swift; sourceTree = "<group>"; };
+		8F6F2D0026034825004A38E5 /* UnsplashCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UnsplashCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +105,15 @@
 		8F6F2CC6260345A9004A38E5 /* My Unsplash */ = {
 			isa = PBXGroup;
 			children = (
+				8F6F2CFB260347D4004A38E5 /* ViewController */,
+				8F6F2D062603482C004A38E5 /* View */,
 				8F6F2CC7260345A9004A38E5 /* AppDelegate.swift */,
 				8F6F2CC9260345A9004A38E5 /* SceneDelegate.swift */,
-				8F6F2CCB260345A9004A38E5 /* ViewController.swift */,
-				8F6F2CCD260345A9004A38E5 /* Main.storyboard */,
+				8F6F2CFA260347C7004A38E5 /* Storyboard */,
 				8F6F2CD0260345AA004A38E5 /* Assets.xcassets */,
 				8F6F2CD2260345AA004A38E5 /* LaunchScreen.storyboard */,
 				8F6F2CD5260345AA004A38E5 /* Info.plist */,
+				8F35C9EA26038BB10058BFA5 /* NIBProcess.swift */,
 			);
 			path = "My Unsplash";
 			sourceTree = "<group>";
@@ -126,6 +134,31 @@
 				8F6F2CEB260345AB004A38E5 /* Info.plist */,
 			);
 			path = "My UnsplashUITests";
+			sourceTree = "<group>";
+		};
+		8F6F2CFA260347C7004A38E5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F2CCD260345A9004A38E5 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8F6F2CFB260347D4004A38E5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F2CCB260345A9004A38E5 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8F6F2D062603482C004A38E5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F6F2CFF26034825004A38E5 /* UnsplashCollectionViewCell.swift */,
+				8F6F2D0026034825004A38E5 /* UnsplashCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6F2D0226034825004A38E5 /* UnsplashCollectionViewCell.xib in Resources */,
 				8F6F2CD4260345AA004A38E5 /* LaunchScreen.storyboard in Resources */,
 				8F6F2CD1260345AA004A38E5 /* Assets.xcassets in Resources */,
 				8F6F2CCF260345A9004A38E5 /* Main.storyboard in Resources */,
@@ -258,6 +292,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F6F2D0126034825004A38E5 /* UnsplashCollectionViewCell.swift in Sources */,
+				8F35C9EB26038BB10058BFA5 /* NIBProcess.swift in Sources */,
 				8F6F2CCC260345A9004A38E5 /* ViewController.swift in Sources */,
 				8F6F2CC8260345A9004A38E5 /* AppDelegate.swift in Sources */,
 				8F6F2CCA260345A9004A38E5 /* SceneDelegate.swift in Sources */,
